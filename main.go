@@ -4,6 +4,9 @@ import (
 	"fmt"
 	"log"
 	"net/http"
+
+	"github.com/komalshah1987/GolangAPI/route"
+	"github.com/komalshah1987/GolangAPI/services"
 )
 
 func HomePage(w http.ResponseWriter, r *http.Request) {
@@ -12,6 +15,7 @@ func HomePage(w http.ResponseWriter, r *http.Request) {
 }
 
 func HandleRequests() {
+	go services.InitializeData()
 	r := route.NewRoute()
 	http.HandleFunc("/", HomePage)
 	log.Fatal(http.ListenAndServe(":8082", nil))

@@ -3,8 +3,8 @@ package route
 import (
 	http "net/http"
 
-	v1 "github.com/GolangAPI/controller"
 	"github.com/gorilla/mux"
+	v1 "github.com/komalshah1987/GolangAPI/controller"
 )
 
 type Route struct {
