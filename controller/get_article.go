@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	model "github.com/GolangAPI/model"
+	model "github.com/komalshah1987/GolangAPI/model"
 )
 
 type ArticleRepository struct{}
