@@ -5,7 +5,7 @@ import (
 	"fmt"
 	"os"
 
-	"github.com/GolangAPI/model"
+	"github.com/komalshah1987/GolangAPI/model"
 )
 
 var spool = []model.Article{}

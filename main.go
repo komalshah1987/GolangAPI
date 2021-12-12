@@ -12,6 +12,7 @@ func HomePage(w http.ResponseWriter, r *http.Request) {
 }
 
 func HandleRequests() {
+	r := route.NewRoute()
 	http.HandleFunc("/", HomePage)
 	log.Fatal(http.ListenAndServe(":8082", nil))
 }
