@@ -15,6 +15,8 @@ func HomePage(w http.ResponseWriter, r *http.Request) {
 }
 
 func HandleRequests() {
+	go services.InitializeData()
+	r := route.NewRoute()
 	http.HandleFunc("/", HomePage)
 	go services.InitializeData()
 	r := route.NewRoute()
